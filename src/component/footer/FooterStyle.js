@@ -54,6 +54,7 @@ export const useFooterStyle = makeStyles((theme) =>
             color:"#fff",
             display:"flex",
             justifyContent:"space-evenly",
+            flexWrap:"wrap",
             marginTop:"50px",
             marginBottom:"50px",
 
@@ -76,7 +77,11 @@ export const useFooterStyle = makeStyles((theme) =>
         },
         titelList:{
             marginBottom:"20px",
+            marginTop:"20px"
                        
+        },
+        feedDiv:{
+            width:"250px",
         }
     })
 )

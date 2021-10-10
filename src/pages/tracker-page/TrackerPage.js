@@ -6,7 +6,8 @@ import { fetchTrackerCountry } from "../../services/fetchApi";
 import { useTrackerPageStyle } from "./TrackerPageStyle";
 import "leaflet/dist/leaflet.css";
 import { Backdrop, CircularProgress } from "@mui/material";
-
+import Footer from "../../component/footer/Footer";
+import Tracer from "../../component/tracker/Tracker"
 export default function TrackerPage() {
     const classes = useTrackerPageStyle();
     const [tracker, setTracker] = useState({});
@@ -29,12 +30,12 @@ export default function TrackerPage() {
     <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={true}
-        // onClick={()=>{}}
     >
         <CircularProgress color="inherit" />
     </Backdrop>)
     return (
         <div>
+            <Tracer/>
             <div className={classes.trackerTable}>
                 <TrackerCountry countrys={tracker} />
                 <TrackerCountryDis countrys={tracker} />
@@ -45,6 +46,8 @@ export default function TrackerPage() {
                     zoom={mapZoom}
                 /> */}
             </div>
+            <Footer/>
+
         </div>
     )
 }

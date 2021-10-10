@@ -8,7 +8,8 @@ export const useTrackerPageStyle = makeStyles((theme) =>
         },
         trackerTable:{
             display:"flex",
-            justifyContent:"space-evenly"
+            justifyContent:"space-evenly",
+            flexWrap:"wrap",
         }
     }
     ),

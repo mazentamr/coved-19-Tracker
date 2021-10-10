@@ -27,7 +27,7 @@ export default function Footer() {
 
                 </div>
 
-                <div>
+                <div className={classes.feedDiv}>
                     <h4 className={classes.titelList}>Quick Links</h4>
                     <ul>
                         <li>Home</li>
@@ -38,7 +38,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div>
+                <div  className={classes.feedDiv}>
                     <h4 className={classes.titelList}>Contacts</h4>
                     <ul>
                         <li>Email: hello@cognizance.com</li>
@@ -47,7 +47,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div>
+                <div  className={classes.feedDiv}>
                     <h4 className={classes.titelList}>Working Days</h4>
                     <ul>
                         <li>Monday: 8AM - 6PM</li>
