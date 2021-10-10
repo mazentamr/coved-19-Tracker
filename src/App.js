@@ -1,6 +1,6 @@
 import './App.css';
 import Feed from './component/feed/Feed';
-// import Footer from './component/footer/Footer';
+import Footer from './component/footer/Footer';
 import Header from './component/header/Header';
 import Protection from './component/protection/Protection';
 import Questions from './component/questions/Questions';
@@ -13,8 +13,7 @@ function App() {
       <Tracer />
       <Protection/>
       <Questions/>
-      {/* <Footer/> */}
-      
+      <Footer/>
     </div>
   );
 }

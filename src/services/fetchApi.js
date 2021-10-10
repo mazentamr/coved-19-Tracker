@@ -1,12 +1,23 @@
 import axios from "axios";
-const url = 'https://covid19.mathdro.id/api';
+const url = 'https://disease.sh/v3';
 
-
-
-export default async function fetchTracker() {
+export async function fetchTracker() {
 
     try {
-        const data = await axios.get(url)
+        const data = await axios.get(`${url}/covid-19/all`)
+        return data;
+
+    } catch (error) {
+        return error;
+    }
+
+}
+
+
+export async function fetchTrackerCountry() {
+
+    try {
+        const data = await axios.get(`${url}/covid-19/countries`)
         return data;
 
     } catch (error) {

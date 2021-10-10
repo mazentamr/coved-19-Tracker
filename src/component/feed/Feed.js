@@ -25,7 +25,7 @@ export default function Feed() {
     return (
         <div className={classes.root}>
             <div className={classes.feed}>
-                <Fade right>
+                <Fade right cascade>
                     <h1 className={classes.feedText}>Most People Infected</h1>
                     <h1 className={classes.feedText}>With The COVID-19</h1>
                     <p className={classes.feed_p}>

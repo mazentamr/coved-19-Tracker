@@ -5,6 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 const dataQ = [
     {
@@ -35,7 +36,7 @@ export default function Questions() {
 
     return (
         <div className={classes.root} >
-            <div className={classes.titel}><h2> Frequently Asked & Questions </h2></div>
+           <Fade> <div className={classes.titel}><h2> Frequently Asked & Questions </h2></div></Fade>
             <div className={classes.Questions} >
                 <div>
                     {dataQ.map(item => <QuestionsFeed answer={item.answer} Q={item.Q} />)}

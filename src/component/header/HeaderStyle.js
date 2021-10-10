@@ -3,7 +3,7 @@ import { createStyles, makeStyles } from '@mui/styles';
 export const useHeaderStyle = makeStyles((theme) =>
     createStyles({
         root: {
-            height: "50px",
+            height: "70px",
             width: "100%",
             display:"flex",
             justifyContent:"space-between",
@@ -12,6 +12,11 @@ export const useHeaderStyle = makeStyles((theme) =>
             bottom:"0",
             right:"0",
             zIndex:"9999",
+            transition:"all 0.5s ease-in",
+        },
+        nave_black:{
+            backgroundColor:"#130947",
+            color:"#fff"
         },
         headerLift: {
             marginTop:"5px",
@@ -26,8 +31,8 @@ export const useHeaderStyle = makeStyles((theme) =>
             height:"40px",
         },
         headerLift_titel:{
-            color:"#444",
-            fontSize:"25px",
+            color:"#fff",
+            fontSize:"27px",
         },
         headerRigth:{
             display:"flex",
@@ -37,9 +42,9 @@ export const useHeaderStyle = makeStyles((theme) =>
         headerRigth_list:{
             listStyleType:"none",
             marginLeft:"20px",
-            fontSize:"20px",
+            fontSize:"15px",
             cursor:"pointer",
-            color:"#333"
+            color:"#fff"
         }
     }),
 );
